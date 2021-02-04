@@ -591,3 +591,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Hide DS_Store
+.DS_Store
