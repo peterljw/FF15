@@ -8,8 +8,15 @@ library(DT)
 library(plotly)
 library(tidyverse)
 
+# load champions
+df_champion_properties = aws.s3::s3read_using(read.csv, object = "s3://peter-ff15-data/champion_properties.csv")
+df_champion_properties$X = NULL
+factor_cols <- sapply(df_champion_properties, is.factor)
+df_champion_properties[factor_cols] <- lapply(df_champion_properties[factor_cols], as.character)
+champion_options = unique(df_champion_properties$champion)
+
 ui <- dashboardPage(
-  
+  title = 'FF15',
   # dsahboard color theme
   skin = "black",
   
@@ -23,7 +30,8 @@ ui <- dashboardPage(
       # champion statistics
       menuItem("Champion Statistics", tabName = "champion_statistics", icon = icon("chart-bar")),
       # game strategy
-      menuItem("Game Strategy", tabName = "game_strategy", icon = icon("lightbulb"),
+      menuItem("Game Strategy", tabName = "game_strategy", icon = icon("trophy"),
+               menuSubItem("Champion Guide", tabName = "champion_guide"),
                menuSubItem("Win Conditions", tabName = "win_conditions"),
                menuSubItem("Duo Synergy", tabName = "duo_synergy")
       ),
@@ -38,7 +46,7 @@ ui <- dashboardPage(
       tabItem(tabName = "champion_statistics",
               fluidRow(
                 column(12,
-                       box(width = NULL,
+                       box(width = NULL, solidHeader = TRUE,
                            checkboxGroupInput("champion_statistics_rank",
                                               label = "",
                                               choices = c('Iron','Bronze','Silver',
@@ -53,7 +61,7 @@ ui <- dashboardPage(
               fluidRow(
                 column(12,
                        box(width = NULL,
-                           DT::dataTableOutput("us_table") %>% withSpinner(type = 8)) # color=
+                           DT::dataTableOutput("champion_stats_table") %>% withSpinner(type = 8)) # color=
                 )
               )
       ),
@@ -68,7 +76,22 @@ ui <- dashboardPage(
       
       #### Pick & Ban ####
       tabItem(tabName = "pick_ban",
-              #### Pick & Ban Champion Selection ####
+              #### Pick & Ban Interface ####
+              fluidRow(
+                column(12,
+                       box(width = NULL, solidHeader = TRUE,
+                           checkboxGroupInput("pick_ban_rank",
+                                              label = "",
+                                              choices = c('Iron','Bronze','Silver',
+                                                          'Gold','Platinum','Diamond',
+                                                          'Master','Grandmaster',
+                                                          'Challenger'),
+                                              selected = c('Silver','Gold'),
+                                              inline = TRUE),
+                           textInput("favorite_champions", label = "", value = "Enter favorite champions separated by comma (For example: 'Teemo,Garen,Twisted Fate')")
+                       )
+                )
+              ),
               fluidRow(
                 tags$head(
                   tags$style(type="text/css", 
@@ -87,72 +110,69 @@ ui <- dashboardPage(
                              padding-right: 15px;
                              }")
                   ),
-                column(6,
+                column(4,
                        box(width = NULL, h4('Ally'),
                            selectInput("ally_top", h5("Top: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("ally_jungle", h5("Jungle: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("ally_mid", h5("Mid: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("ally_bot", h5("Bot: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("ally_supp", h5("Supp: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion")
                            )
                 ),
-                column(6,
+                
+                column(4,
+                       box(width = NULL, h4('Combat Radar')
+                       )
+                ),
+                
+                column(4,
                        box(width = NULL, h4('Enemy'),
                            selectInput("enemy_top", h5("Top: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("enemy_jungle", h5("Jungle: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("enemy_mid", h5("Mid: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("enemy_bot", h5("Bot: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
                            selectInput("enemy_supp", h5("Supp: "), 
-                                       choices = c("Choosing Champion",
-                                                   "Confirmed",
-                                                   "Deaths"),
+                                       choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion")
                            )
                 )
               ),
               
-              #### Team Comp Visualization ####
-              fluidRow(),
-              
-              #### Champion Suggestion ####
-              fluidRow()
-      ) 
+              #### Pick & Ban Assistance ####
+              fluidRow(
+                column(12,
+                       box(width = NULL, solidHeader = TRUE,
+                           tabsetPanel(
+                             #### Champion Recommendation ####
+                             tabPanel("Champion Recommendation",
+                                      checkboxInput("favorite_champions_only", label = "Recommend Faviorite Champions Only", value = FALSE),
+                                      DT::dataTableOutput("champion_recommendation_table") %>% withSpinner(type = 8)
+                                      ),
+                             tabPanel("Composition Comparison"),
+                             tabPanel("Counter Strategy")
+                           )
+                           )
+                           )
+                       )
+              ) 
     )
     )
   )

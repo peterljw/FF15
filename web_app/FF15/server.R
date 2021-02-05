@@ -68,14 +68,22 @@ generate_champion_stats_table <- function(df_champion_stats,df_champion_properti
 ######## Shiny Server ########
 shinyServer(function(input, output) {
   ######## Champion Statistics ########
-  output$us_table <- ({
+  output$champion_stats_table <- ({
     DT::renderDataTable(generate_champion_stats_table(df_champion_stats,df_champion_properties,input$champion_statistics_rank), 
                         options = list(autoWidth = TRUE,pageLength=15,
-                                       columnDefs = list(list(width = '20%', targets = list(10))),
                                        searchHighlight = TRUE,
                                        scrollX = TRUE),
                         filter = 'top')
   })
   
-  ######## Team Comp Visualization ########
+  ######## Combat Radar ########
+  
+  ######## Champion Recommendation ########
+  output$champion_recommendation_table <- ({
+    DT::renderDataTable(generate_champion_stats_table(df_champion_stats,df_champion_properties,input$pick_ban_rank), 
+                        options = list(autoWidth = TRUE,pageLength=10,
+                                       searchHighlight = TRUE,
+                                       scrollX = TRUE),
+                        filter = 'top')
+  })
 })
