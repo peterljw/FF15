@@ -6,9 +6,15 @@ library(shinyWidgets)
 
 library(DT)
 library(plotly)
+library(highcharter)
 library(tidyverse)
 
 # load champions
+s3BucketName <- "peter-covid-dashboard-data"
+Sys.setenv("AWS_ACCESS_KEY_ID" = "AKIAWECDTQ4VU6FGPRHY",
+           "AWS_SECRET_ACCESS_KEY" = "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",
+           "AWS_DEFAULT_REGION" = "us-east-2")
+
 df_champion_properties = aws.s3::s3read_using(read.csv, object = "s3://peter-ff15-data/champion_properties.csv")
 df_champion_properties$X = NULL
 factor_cols <- sapply(df_champion_properties, is.factor)
@@ -29,12 +35,12 @@ ui <- dashboardPage(
     sidebarMenu(
       # champion statistics
       menuItem("Champion Statistics", tabName = "champion_statistics", icon = icon("chart-bar")),
-      # game strategy
-      menuItem("Game Strategy", tabName = "game_strategy", icon = icon("trophy"),
-               menuSubItem("Champion Guide", tabName = "champion_guide"),
-               menuSubItem("Win Conditions", tabName = "win_conditions"),
-               menuSubItem("Duo Synergy", tabName = "duo_synergy")
-      ),
+      # # game strategy
+      # menuItem("Game Strategy", tabName = "game_strategy", icon = icon("trophy"),
+      #          menuSubItem("Champion Guide", tabName = "champion_guide"),
+      #          menuSubItem("Win Conditions", tabName = "win_conditions"),
+      #          menuSubItem("Duo Synergy", tabName = "duo_synergy")
+      # ),
       # pick & ban
       menuItem("Pick & Ban", tabName = "pick_ban", icon = icon("chess"))
     )
@@ -61,7 +67,15 @@ ui <- dashboardPage(
               fluidRow(
                 column(12,
                        box(width = NULL,
-                           DT::dataTableOutput("champion_stats_table") %>% withSpinner(type = 8)) # color=
+                           tabsetPanel(
+                             tabPanel("Top",DT::dataTableOutput("champion_stats_table_top") %>% withSpinner(type = 8)),
+                             tabPanel("Jungle",DT::dataTableOutput("champion_stats_table_jungle") %>% withSpinner(type = 8)),
+                             tabPanel("Mid",DT::dataTableOutput("champion_stats_table_mid") %>% withSpinner(type = 8)),
+                             tabPanel("Bot",DT::dataTableOutput("champion_stats_table_bot") %>% withSpinner(type = 8)),
+                             tabPanel("Supp",DT::dataTableOutput("champion_stats_table_supp") %>% withSpinner(type = 8))
+                             )
+                           
+                           )
                 )
               )
       ),
@@ -78,40 +92,25 @@ ui <- dashboardPage(
       tabItem(tabName = "pick_ban",
               #### Pick & Ban Interface ####
               fluidRow(
-                column(12,
-                       box(width = NULL, solidHeader = TRUE,
-                           checkboxGroupInput("pick_ban_rank",
-                                              label = "",
-                                              choices = c('Iron','Bronze','Silver',
-                                                          'Gold','Platinum','Diamond',
-                                                          'Master','Grandmaster',
-                                                          'Challenger'),
-                                              selected = c('Silver','Gold'),
-                                              inline = TRUE),
-                           textInput("favorite_champions", label = "", value = "Enter favorite champions separated by comma (For example: 'Teemo,Garen,Twisted Fate')")
-                       )
-                )
-              ),
-              fluidRow(
-                tags$head(
-                  tags$style(type="text/css", 
-                             "label.control-label, .selectize-control.single { 
-                             display: table-cell; 
-                             text-align: center; 
-                             vertical-align: middle; 
-                             } 
-                             label.control-label {
-                             padding-right: 10px;
-                             }
-                             .form-group { 
-                             display: table-row;
-                             }
-                             .selectize-control.single div.item {
-                             padding-right: 15px;
-                             }")
-                  ),
-                column(4,
-                       box(width = NULL, h4('Ally'),
+                # tags$head(
+                #   tags$style(type="text/css", 
+                #              "label.control-label, .selectize-control.single { 
+                #              display: table-cell; 
+                #              text-align: center; 
+                #              vertical-align: middle; 
+                #              } 
+                #              label.control-label {
+                #              padding-right: 10px;
+                #              }
+                #              .form-group { 
+                #              display: table-row;
+                #              }
+                #              .selectize-control.single div.item {
+                #              padding-right: 15px;
+                #              }")
+                #   ),
+                column(3,
+                       box(width = NULL, h4('Ally'), height = '515px',
                            selectInput("ally_top", h5("Top: "), 
                                        choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
@@ -130,13 +129,14 @@ ui <- dashboardPage(
                            )
                 ),
                 
-                column(4,
-                       box(width = NULL, h4('Combat Radar')
+                column(6,
+                       box(width = NULL, h4('Combat Radar'), height = '515px',
+                           highchartOutput("combat_radar_plot")
                        )
                 ),
                 
-                column(4,
-                       box(width = NULL, h4('Enemy'),
+                column(3,
+                       box(width = NULL, h4('Enemy'), height = '515px',
                            selectInput("enemy_top", h5("Top: "), 
                                        choices = c("Choosing Champion",champion_options),
                                        selected = "Choosing Champion"),
@@ -156,18 +156,36 @@ ui <- dashboardPage(
                 )
               ),
               
-              #### Pick & Ban Assistance ####
+              #### Pick & Ban Recommendation ####
               fluidRow(
                 column(12,
                        box(width = NULL, solidHeader = TRUE,
+                           checkboxGroupInput("pick_ban_rank",
+                                              label = "",
+                                              choices = c('Iron','Bronze','Silver',
+                                                          'Gold','Platinum','Diamond',
+                                                          'Master','Grandmaster',
+                                                          'Challenger'),
+                                              selected = c('Silver','Gold'),
+                                              inline = TRUE),
+                           sliderInput("champion_recommendation_slider", 
+                                       label = h5("Aggression Meter (Right/High: Prioritize champions that best counter enemies; Left/Low: Prioritize champions that best synergize with allies)"),
+                                       min = 0, max = 10, value = 5),
+                           textInput("favorite_champions", label = "", value = "Enter favorite champions separated by comma to limit the recommendations below. (For example: 'Teemo,Garen,Darius')")
+                       )
+                )
+              ),
+              fluidRow(
+                column(12,
+                       box(width = NULL, solidHeader = FALSE,
+                           h4("Champion Recommendation"),
                            tabsetPanel(
                              #### Champion Recommendation ####
-                             tabPanel("Champion Recommendation",
-                                      checkboxInput("favorite_champions_only", label = "Recommend Faviorite Champions Only", value = FALSE),
-                                      DT::dataTableOutput("champion_recommendation_table") %>% withSpinner(type = 8)
-                                      ),
-                             tabPanel("Composition Comparison"),
-                             tabPanel("Counter Strategy")
+                             tabPanel("Top",DT::dataTableOutput("champion_recommendation_table_top") %>% withSpinner(type = 8)),
+                             tabPanel("Jungle",DT::dataTableOutput("champion_recommendation_table_jungle") %>% withSpinner(type = 8)),
+                             tabPanel("Mid",DT::dataTableOutput("champion_recommendation_table_mid") %>% withSpinner(type = 8)),
+                             tabPanel("Bot",DT::dataTableOutput("champion_recommendation_table_bot") %>% withSpinner(type = 8)),
+                             tabPanel("Supp",DT::dataTableOutput("champion_recommendation_table_supp") %>% withSpinner(type = 8))
                            )
                            )
                            )

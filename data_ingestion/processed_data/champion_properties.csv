@@ -1,155 +1,155 @@
-champion,class,primary_class,secondary_class,role,ratings
-Aatrox,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 3, 'Toughness': 3, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Ahri,Mage/Assassin,Mage,Assassin,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Akali,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Alistar,Tank/Support,Tank,Support,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Amumu,Tank/Mage,Tank,Mage,Vanguard,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Anivia,Mage/Support,Mage,Support,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Annie,Mage,Mage,,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Aphelios,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Ashe,Marksman/Support,Marksman,Support,Marksman,"{'Physical Damage': 2, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Aurelion Sol,Mage,Mage,,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Azir,Mage/Marksman,Mage,Marksman,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Bard,Support/Mage,Support,Mage,Catcher,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 3, 'Mobility': 2, 'Utility': 3}"
-Blitzcrank,Tank/Fighter,Tank,Fighter,Catcher,"{'Magic Damage': 1, 'Toughness': 2, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Brand,Mage,Mage,,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Braum,Support/Tank,Support,Tank,Warden,"{'Magic Damage': 1, 'Toughness': 2, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Caitlyn,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Camille,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Cassiopeia,Mage,Mage,,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Cho'Gath,Tank/Mage,Tank,Mage,Specialist,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Corki,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Darius,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Diana,Fighter/Mage,Fighter,Mage,Assassin,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Dr. Mundo,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-Draven,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Ekko,Assassin/Fighter,Assassin,Fighter,Assassin,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Elise,Mage/Fighter,Mage,Fighter,Diver,"{'Magic Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Evelynn,Assassin/Mage,Assassin,Mage,Assassin,"{'Magic Damage': 2, 'Toughness': 2, 'Control': 1, 'Mobility': 2, 'Utility': 2}"
-Ezreal,Marksman/Mage,Marksman,Mage,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Fiddlesticks,Mage/Support,Mage,Support,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Fiora,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Fizz,Assassin/Fighter,Assassin,Fighter,Assassin,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Galio,Tank/Mage,Tank,Mage,Warden,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Gangplank,Fighter,Fighter,,Specialist,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 2}"
-Garen,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-Gnar,Fighter/Tank,Fighter,Tank,Specialist,"{'Physical Damage': 2, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Gragas,Fighter/Mage,Fighter,Mage,Vanguard,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Graves,Marksman,Marksman,,Specialist,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 2, 'Utility': 2}"
-Hecarim,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Heimerdinger,Mage/Support,Mage,Support,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Illaoi,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-Irelia,Fighter/Assassin,Fighter,Assassin,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 3, 'Utility': 2}"
-Ivern,Support/Mage,Support,Mage,Catcher,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 3, 'Mobility': 2, 'Utility': 3}"
-Janna,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 3}"
-Jarvan IV,Tank/Fighter,Tank,Fighter,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Jax,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Jayce,Fighter/Marksman,Fighter,Marksman,Artillery,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 2}"
-Jhin,Marksman/Mage,Marksman,Mage,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Jinx,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Kai'Sa,Marksman,Marksman,,Marksman,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Kalista,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 2}"
-Karma,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Karthus,Mage,Mage,,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 2}"
-Kassadin,Assassin/Mage,Assassin,Mage,Assassin,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Katarina,Assassin/Mage,Assassin,Mage,Assassin,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Kayle,Fighter/Support,Fighter,Support,Specialist,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 3}"
-Kayn,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Kennen,Mage/Marksman,Mage,Marksman,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Kha'Zix,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Kindred,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 2}"
-Kled,Fighter/Tank,Fighter,Tank,Skirmisher,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Kog'Maw,Marksman/Mage,Marksman,Mage,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-LeBlanc,Assassin/Mage,Assassin,Mage,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Lee Sin,Fighter/Assassin,Fighter,Assassin,Diver,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Leona,Tank/Support,Tank,Support,Vanguard,"{'Physical Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Lillia,Mage,Mage,,Skirmisher,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Lissandra,Mage,Mage,,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Lucian,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Lulu,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Lux,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Malphite,Tank/Fighter,Tank,Fighter,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Malzahar,Mage/Assassin,Mage,Assassin,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Maokai,Tank/Mage,Tank,Mage,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Master Yi,Assassin/Fighter,Assassin,Fighter,Skirmisher,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Miss Fortune,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-Mordekaiser,Fighter,Fighter,,Juggernaut,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 1, 'Utility': 2}"
-Morgana,Mage/Support,Mage,Support,Catcher,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Nami,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Nasus,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Nautilus,Tank/Fighter,Tank,Fighter,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Neeko,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Nidalee,Assassin/Mage,Assassin,Mage,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 2}"
-Nocturne,Assassin/Fighter,Assassin,Fighter,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Nunu & Willump,Tank/Fighter,Tank,Fighter,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Olaf,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Orianna,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Ornn,Tank/Fighter,Tank,Fighter,Vanguard,"{'Physical Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Pantheon,Fighter/Assassin,Fighter,Assassin,Diver,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Poppy,Tank/Fighter,Tank,Fighter,Warden,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Pyke,Support/Assassin,Support,Assassin,Assassin,"{'Physical Damage': 2, 'Toughness': 1, 'Control': 3, 'Mobility': 3, 'Utility': 1}"
-Qiyana,Assassin/Fighter,Assassin,Fighter,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Quinn,Marksman/Assassin,Marksman,Assassin,Specialist,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Rakan,Support,Support,,Catcher,"{'Magic Damage': 1, 'Toughness': 2, 'Control': 3, 'Mobility': 3, 'Utility': 3}"
-Rammus,Tank/Fighter,Tank,Fighter,Vanguard,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Rek'Sai,Fighter,Fighter,,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Rell,Support/Tank,Support,Tank,Vanguard,"{'Magic Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 2}"
-Renekton,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Rengar,Assassin/Fighter,Assassin,Fighter,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Riven,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Rumble,Fighter/Mage,Fighter,Mage,Battlemage,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Ryze,Mage/Fighter,Mage,Fighter,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Samira,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Sejuani,Tank/Fighter,Tank,Fighter,Vanguard,"{'Magic Damage': 2, 'Toughness': 2, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Senna,Marksman/Support,Marksman,Support,Marksman,"{'Physical Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Seraphine,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 2}"
-Sett,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Shaco,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Shen,Tank,Tank,,Warden,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 2, 'Utility': 3}"
-Shyvana,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Singed,Tank/Fighter,Tank,Fighter,Specialist,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Sion,Tank/Fighter,Tank,Fighter,Vanguard,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Sivir,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 1, 'Utility': 2}"
-Skarner,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 1, 'Toughness': 3, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Sona,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Soraka,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Swain,Mage/Fighter,Mage,Fighter,Battlemage,"{'Magic Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Sylas,Mage/Assassin,Mage,Assassin,Burst,"{'Magic Damage': 2, 'Toughness': 2, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Syndra,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Tahm Kench,Support/Tank,Support,Tank,Warden,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Taliyah,Mage/Support,Mage,Support,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Talon,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Taric,Support/Fighter,Support,Fighter,Enchanter,"{'Physical Damage': 1, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 3}"
-Teemo,Marksman/Assassin,Marksman,Assassin,Specialist,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Thresh,Support/Fighter,Support,Fighter,Catcher,"{'Magic Damage': 1, 'Toughness': 2, 'Control': 3, 'Mobility': 1, 'Utility': 3}"
-Tristana,Marksman/Assassin,Marksman,Assassin,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Trundle,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 1, 'Mobility': 1, 'Utility': 2}"
-Tryndamere,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Twisted Fate,Mage,Mage,,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 2}"
-Twitch,Marksman/Assassin,Marksman,Assassin,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 2, 'Utility': 1}"
-Udyr,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Urgot,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Varus,Marksman/Mage,Marksman,Mage,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Vayne,Marksman/Assassin,Marksman,Assassin,Marksman,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Veigar,Mage,Mage,,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Vel'Koz,Mage,Mage,,Artillery,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Vi,Fighter/Assassin,Fighter,Assassin,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Viego,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Viktor,Mage,Mage,,Battlemage,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Vladimir,Mage,Mage,,Battlemage,"{'Magic Damage': 3, 'Toughness': 2, 'Control': 1, 'Mobility': 1, 'Utility': 1}"
-Volibear,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 3, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Warwick,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Wukong,Fighter/Tank,Fighter,Tank,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Xayah,Marksman,Marksman,,Marksman,"{'Physical Damage': 3, 'Toughness': 2, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
-Xerath,Mage,Mage,,Artillery,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 1, 'Utility': 1}"
-Xin Zhao,Fighter/Assassin,Fighter,Assassin,Diver,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Yasuo,Fighter/Assassin,Fighter,Assassin,Skirmisher,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 2}"
-Yone,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 3, 'Utility': 1}"
-Yorick,Fighter/Tank,Fighter,Tank,Juggernaut,"{'Physical Damage': 2, 'Toughness': 2, 'Control': 2, 'Mobility': 1, 'Utility': 2}"
-Yuumi,Support/Mage,Support,Mage,Enchanter,"{'Magic Damage': 1, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 3}"
-Zac,Tank/Fighter,Tank,Fighter,Vanguard,"{'Magic Damage': 2, 'Toughness': 3, 'Control': 3, 'Mobility': 2, 'Utility': 1}"
-Zed,Assassin,Assassin,,Assassin,"{'Physical Damage': 3, 'Toughness': 1, 'Control': 1, 'Mobility': 3, 'Utility': 1}"
-Ziggs,Mage,Mage,,Artillery,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Zilean,Support/Mage,Support,Mage,Specialist,"{'Magic Damage': 2, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 3}"
-Zoe,Mage/Support,Mage,Support,Burst,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 2, 'Mobility': 2, 'Utility': 1}"
-Zyra,Mage/Support,Mage,Support,Catcher,"{'Magic Damage': 3, 'Toughness': 1, 'Control': 3, 'Mobility': 1, 'Utility': 1}"
+champion,class,primary_class,secondary_class,role,physical_damage,tankiness,control,mobility,utility,magic_damage
+Aatrox,Fighter/Tank,Fighter,Tank,Juggernaut,3.0,3.0,2.0,2.0,2.0,0.0
+Ahri,Mage/Assassin,Mage,Assassin,Burst,0.0,1.0,2.0,3.0,1.0,3.0
+Akali,Assassin,Assassin,,Assassin,3.0,1.0,1.0,3.0,1.0,0.0
+Alistar,Tank/Support,Tank,Support,Vanguard,0.0,3.0,3.0,1.0,2.0,1.0
+Amumu,Tank/Mage,Tank,Mage,Vanguard,0.0,3.0,3.0,1.0,1.0,2.0
+Anivia,Mage/Support,Mage,Support,Battlemage,0.0,1.0,3.0,1.0,2.0,3.0
+Annie,Mage,Mage,,Burst,0.0,1.0,3.0,1.0,2.0,3.0
+Aphelios,Marksman,Marksman,,Marksman,3.0,1.0,2.0,1.0,1.0,0.0
+Ashe,Marksman/Support,Marksman,Support,Marksman,2.0,1.0,3.0,1.0,2.0,0.0
+Aurelion Sol,Mage,Mage,,Battlemage,0.0,1.0,2.0,2.0,1.0,3.0
+Azir,Mage/Marksman,Mage,Marksman,Specialist,0.0,1.0,2.0,2.0,1.0,3.0
+Bard,Support/Mage,Support,Mage,Catcher,0.0,1.0,3.0,2.0,3.0,1.0
+Blitzcrank,Tank/Fighter,Tank,Fighter,Catcher,0.0,2.0,3.0,1.0,1.0,1.0
+Brand,Mage,Mage,,Burst,0.0,1.0,2.0,1.0,1.0,3.0
+Braum,Support/Tank,Support,Tank,Warden,0.0,2.0,3.0,1.0,2.0,1.0
+Caitlyn,Marksman,Marksman,,Marksman,3.0,1.0,2.0,2.0,1.0,0.0
+Camille,Fighter/Tank,Fighter,Tank,Diver,3.0,2.0,2.0,3.0,1.0,0.0
+Cassiopeia,Mage,Mage,,Battlemage,0.0,1.0,3.0,1.0,1.0,3.0
+Cho'Gath,Tank/Mage,Tank,Mage,Specialist,0.0,3.0,2.0,1.0,1.0,2.0
+Corki,Marksman,Marksman,,Marksman,3.0,1.0,1.0,2.0,1.0,0.0
+Darius,Fighter/Tank,Fighter,Tank,Juggernaut,3.0,2.0,2.0,1.0,1.0,0.0
+Diana,Fighter/Mage,Fighter,Mage,Assassin,0.0,2.0,2.0,2.0,1.0,3.0
+Dr. Mundo,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,1.0,1.0,1.0,0.0
+Draven,Marksman,Marksman,,Marksman,3.0,1.0,1.0,2.0,1.0,0.0
+Ekko,Assassin/Fighter,Assassin,Fighter,Assassin,0.0,2.0,2.0,3.0,1.0,3.0
+Elise,Mage/Fighter,Mage,Fighter,Diver,0.0,2.0,2.0,2.0,1.0,2.0
+Evelynn,Assassin/Mage,Assassin,Mage,Assassin,0.0,2.0,1.0,2.0,2.0,2.0
+Ezreal,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,1.0,3.0,1.0,0.0
+Fiddlesticks,Mage/Support,Mage,Support,Specialist,0.0,1.0,3.0,1.0,1.0,3.0
+Fiora,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,2.0,2.0,2.0,0.0
+Fizz,Assassin/Fighter,Assassin,Fighter,Assassin,0.0,1.0,2.0,3.0,1.0,3.0
+Galio,Tank/Mage,Tank,Mage,Warden,0.0,3.0,3.0,2.0,1.0,2.0
+Gangplank,Fighter,Fighter,,Specialist,3.0,1.0,1.0,1.0,2.0,0.0
+Garen,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,1.0,1.0,1.0,0.0
+Gnar,Fighter/Tank,Fighter,Tank,Specialist,2.0,1.0,1.0,2.0,1.0,0.0
+Gragas,Fighter/Mage,Fighter,Mage,Vanguard,0.0,3.0,3.0,2.0,1.0,2.0
+Graves,Marksman,Marksman,,Specialist,3.0,2.0,1.0,2.0,2.0,0.0
+Hecarim,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,2.0,1.0,0.0
+Heimerdinger,Mage/Support,Mage,Support,Specialist,0.0,1.0,2.0,1.0,2.0,3.0
+Illaoi,Fighter/Tank,Fighter,Tank,Juggernaut,3.0,2.0,1.0,1.0,1.0,0.0
+Irelia,Fighter/Assassin,Fighter,Assassin,Diver,2.0,2.0,2.0,3.0,2.0,0.0
+Ivern,Support/Mage,Support,Mage,Catcher,0.0,1.0,3.0,2.0,3.0,1.0
+Janna,Support/Mage,Support,Mage,Enchanter,0.0,1.0,3.0,1.0,3.0,1.0
+Jarvan IV,Tank/Fighter,Tank,Fighter,Diver,2.0,2.0,2.0,2.0,2.0,0.0
+Jax,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,2.0,2.0,1.0,0.0
+Jayce,Fighter/Marksman,Fighter,Marksman,Artillery,3.0,1.0,1.0,2.0,2.0,0.0
+Jhin,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,2.0,1.0,1.0,0.0
+Jinx,Marksman,Marksman,,Marksman,3.0,1.0,2.0,1.0,1.0,0.0
+Kai'Sa,Marksman,Marksman,,Marksman,0.0,1.0,1.0,3.0,1.0,3.0
+Kalista,Marksman,Marksman,,Marksman,3.0,1.0,1.0,3.0,2.0,0.0
+Karma,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,1.0,2.0,2.0
+Karthus,Mage,Mage,,Battlemage,0.0,1.0,1.0,1.0,2.0,3.0
+Kassadin,Assassin/Mage,Assassin,Mage,Assassin,0.0,2.0,1.0,3.0,1.0,3.0
+Katarina,Assassin/Mage,Assassin,Mage,Assassin,0.0,1.0,1.0,3.0,1.0,3.0
+Kayle,Fighter/Support,Fighter,Support,Specialist,3.0,1.0,1.0,1.0,3.0,0.0
+Kayn,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,1.0,1.0,3.0,1.0,0.0
+Kennen,Mage/Marksman,Mage,Marksman,Specialist,0.0,1.0,3.0,1.0,1.0,3.0
+Kha'Zix,Assassin,Assassin,,Assassin,3.0,1.0,1.0,2.0,1.0,0.0
+Kindred,Marksman,Marksman,,Marksman,3.0,1.0,2.0,3.0,2.0,0.0
+Kled,Fighter/Tank,Fighter,Tank,Skirmisher,3.0,2.0,1.0,3.0,1.0,0.0
+Kog'Maw,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,1.0,1.0,1.0,0.0
+LeBlanc,Assassin/Mage,Assassin,Mage,Burst,0.0,1.0,2.0,3.0,1.0,3.0
+Lee Sin,Fighter/Assassin,Fighter,Assassin,Diver,3.0,2.0,2.0,3.0,1.0,0.0
+Leona,Tank/Support,Tank,Support,Vanguard,1.0,3.0,3.0,1.0,1.0,0.0
+Lillia,Mage,Mage,,Skirmisher,0.0,1.0,2.0,2.0,2.0,3.0
+Lissandra,Mage,Mage,,Burst,0.0,1.0,3.0,2.0,1.0,3.0
+Lucian,Marksman,Marksman,,Marksman,3.0,1.0,1.0,3.0,1.0,0.0
+Lulu,Support/Mage,Support,Mage,Enchanter,0.0,1.0,2.0,1.0,3.0,2.0
+Lux,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,1.0,2.0,3.0
+Malphite,Tank/Fighter,Tank,Fighter,Vanguard,0.0,3.0,3.0,1.0,1.0,1.0
+Malzahar,Mage/Assassin,Mage,Assassin,Battlemage,0.0,1.0,3.0,1.0,2.0,3.0
+Maokai,Tank/Mage,Tank,Mage,Vanguard,0.0,3.0,3.0,1.0,2.0,1.0
+Master Yi,Assassin/Fighter,Assassin,Fighter,Skirmisher,3.0,1.0,1.0,2.0,1.0,0.0
+Miss Fortune,Marksman,Marksman,,Marksman,3.0,1.0,1.0,1.0,1.0,0.0
+Mordekaiser,Fighter,Fighter,,Juggernaut,0.0,2.0,1.0,1.0,2.0,3.0
+Morgana,Mage/Support,Mage,Support,Catcher,0.0,1.0,3.0,1.0,2.0,2.0
+Nami,Support/Mage,Support,Mage,Enchanter,0.0,1.0,3.0,1.0,2.0,1.0
+Nasus,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,2.0,1.0,1.0,0.0
+Nautilus,Tank/Fighter,Tank,Fighter,Vanguard,0.0,3.0,3.0,1.0,1.0,1.0
+Neeko,Mage/Support,Mage,Support,Burst,0.0,1.0,3.0,1.0,1.0,3.0
+Nidalee,Assassin/Mage,Assassin,Mage,Specialist,0.0,1.0,1.0,3.0,2.0,3.0
+Nocturne,Assassin/Fighter,Assassin,Fighter,Assassin,3.0,1.0,2.0,2.0,2.0,0.0
+Nunu & Willump,Tank/Fighter,Tank,Fighter,Vanguard,0.0,3.0,2.0,1.0,2.0,1.0
+Olaf,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,1.0,1.0,0.0
+Orianna,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,1.0,2.0,2.0
+Ornn,Tank/Fighter,Tank,Fighter,Vanguard,1.0,3.0,3.0,1.0,2.0,0.0
+Pantheon,Fighter/Assassin,Fighter,Assassin,Diver,3.0,2.0,2.0,2.0,1.0,0.0
+Poppy,Tank/Fighter,Tank,Fighter,Warden,2.0,3.0,3.0,2.0,1.0,0.0
+Pyke,Support/Assassin,Support,Assassin,Assassin,2.0,1.0,3.0,3.0,1.0,0.0
+Qiyana,Assassin/Fighter,Assassin,Fighter,Assassin,3.0,1.0,2.0,2.0,1.0,0.0
+Quinn,Marksman/Assassin,Marksman,Assassin,Specialist,3.0,1.0,2.0,3.0,1.0,0.0
+Rakan,Support,Support,,Catcher,0.0,2.0,3.0,3.0,3.0,1.0
+Rammus,Tank/Fighter,Tank,Fighter,Vanguard,2.0,3.0,3.0,2.0,1.0,0.0
+Rek'Sai,Fighter,Fighter,,Diver,2.0,2.0,2.0,2.0,2.0,0.0
+Rell,Support/Tank,Support,Tank,Vanguard,0.0,3.0,3.0,2.0,2.0,1.0
+Renekton,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,2.0,1.0,0.0
+Rengar,Assassin/Fighter,Assassin,Fighter,Assassin,3.0,1.0,2.0,2.0,1.0,0.0
+Riven,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,2.0,3.0,1.0,0.0
+Rumble,Fighter/Mage,Fighter,Mage,Battlemage,0.0,2.0,2.0,1.0,1.0,3.0
+Ryze,Mage/Fighter,Mage,Fighter,Battlemage,0.0,1.0,2.0,2.0,2.0,3.0
+Samira,Marksman,Marksman,,Marksman,3.0,2.0,1.0,3.0,1.0,0.0
+Sejuani,Tank/Fighter,Tank,Fighter,Vanguard,0.0,2.0,3.0,2.0,1.0,2.0
+Senna,Marksman/Support,Marksman,Support,Marksman,2.0,1.0,2.0,1.0,3.0,0.0
+Seraphine,Mage/Support,Mage,Support,Burst,0.0,1.0,3.0,1.0,2.0,3.0
+Sett,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,2.0,2.0,2.0,1.0,0.0
+Shaco,Assassin,Assassin,,Assassin,3.0,1.0,2.0,2.0,2.0,0.0
+Shen,Tank,Tank,,Warden,2.0,3.0,2.0,2.0,3.0,0.0
+Shyvana,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,2.0,1.0,2.0,1.0,0.0
+Singed,Tank/Fighter,Tank,Fighter,Specialist,0.0,3.0,2.0,2.0,1.0,2.0
+Sion,Tank/Fighter,Tank,Fighter,Vanguard,2.0,3.0,3.0,1.0,1.0,0.0
+Sivir,Marksman,Marksman,,Marksman,3.0,1.0,1.0,1.0,2.0,0.0
+Skarner,Fighter/Tank,Fighter,Tank,Diver,1.0,3.0,3.0,1.0,1.0,0.0
+Sona,Support/Mage,Support,Mage,Enchanter,0.0,1.0,2.0,1.0,2.0,2.0
+Soraka,Support/Mage,Support,Mage,Enchanter,0.0,1.0,2.0,1.0,3.0,1.0
+Swain,Mage/Fighter,Mage,Fighter,Battlemage,0.0,2.0,2.0,1.0,1.0,2.0
+Sylas,Mage/Assassin,Mage,Assassin,Burst,0.0,2.0,1.0,3.0,1.0,2.0
+Syndra,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,1.0,1.0,3.0
+Tahm Kench,Support/Tank,Support,Tank,Warden,0.0,3.0,2.0,1.0,3.0,2.0
+Taliyah,Mage/Support,Mage,Support,Battlemage,0.0,1.0,2.0,1.0,3.0,3.0
+Talon,Assassin,Assassin,,Assassin,3.0,1.0,1.0,2.0,1.0,0.0
+Taric,Support/Fighter,Support,Fighter,Enchanter,1.0,2.0,2.0,1.0,3.0,0.0
+Teemo,Marksman/Assassin,Marksman,Assassin,Specialist,0.0,1.0,2.0,1.0,2.0,3.0
+Thresh,Support/Fighter,Support,Fighter,Catcher,0.0,2.0,3.0,1.0,3.0,1.0
+Tristana,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,2.0,2.0,1.0,0.0
+Trundle,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,1.0,1.0,2.0,0.0
+Tryndamere,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,1.0,2.0,1.0,0.0
+Twisted Fate,Mage,Mage,,Burst,0.0,1.0,2.0,2.0,2.0,3.0
+Twitch,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,1.0,2.0,1.0,0.0
+Udyr,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,2.0,2.0,1.0,0.0
+Urgot,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,2.0,2.0,1.0,1.0,0.0
+Varus,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,2.0,1.0,1.0,0.0
+Vayne,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,2.0,2.0,1.0,0.0
+Veigar,Mage,Mage,,Burst,0.0,1.0,3.0,1.0,1.0,3.0
+Vel'Koz,Mage,Mage,,Artillery,0.0,1.0,2.0,1.0,1.0,3.0
+Vi,Fighter/Assassin,Fighter,Assassin,Diver,2.0,2.0,3.0,2.0,1.0,0.0
+Viego,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,1.0,2.0,2.0,1.0,0.0
+Viktor,Mage,Mage,,Battlemage,0.0,1.0,2.0,1.0,1.0,3.0
+Vladimir,Mage,Mage,,Battlemage,0.0,2.0,1.0,1.0,1.0,3.0
+Volibear,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,2.0,2.0,1.0,0.0
+Warwick,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,1.0,1.0,0.0
+Wukong,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,2.0,1.0,0.0
+Xayah,Marksman,Marksman,,Marksman,3.0,2.0,3.0,1.0,1.0,0.0
+Xerath,Mage,Mage,,Artillery,0.0,1.0,2.0,1.0,1.0,3.0
+Xin Zhao,Fighter/Assassin,Fighter,Assassin,Diver,2.0,2.0,2.0,2.0,1.0,0.0
+Yasuo,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,1.0,2.0,3.0,2.0,0.0
+Yone,Assassin,Assassin,,Assassin,3.0,1.0,2.0,3.0,1.0,0.0
+Yorick,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,2.0,2.0,1.0,2.0,0.0
+Yuumi,Support/Mage,Support,Mage,Enchanter,0.0,1.0,1.0,3.0,3.0,1.0
+Zac,Tank/Fighter,Tank,Fighter,Vanguard,0.0,3.0,3.0,2.0,1.0,2.0
+Zed,Assassin,Assassin,,Assassin,3.0,1.0,1.0,3.0,1.0,0.0
+Ziggs,Mage,Mage,,Artillery,0.0,1.0,2.0,2.0,1.0,3.0
+Zilean,Support/Mage,Support,Mage,Specialist,0.0,1.0,2.0,2.0,3.0,2.0
+Zoe,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,2.0,1.0,3.0
+Zyra,Mage/Support,Mage,Support,Catcher,0.0,1.0,3.0,1.0,1.0,3.0

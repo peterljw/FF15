@@ -65,13 +65,14 @@ def get_page_selenium(url):
             # initialize chrome options
             options = webdriver.ChromeOptions()
             options.add_experimental_option('useAutomationExtension', False)
-            # options.add_argument("--headless")
+            options.add_argument("--headless")
             # apply chrome options
             driver = webdriver.Chrome(options=options,executable_path='./utility/chromedriver')
             # change user agent
             change_ua_selenium_options(get_user_agent(), options)
             # load the url
             driver.get(url)
+            driver.set_window_size(1920, 1080)
             # close possibe pop ups
             for i in range(2):
                 time.sleep(randint(1,2))
