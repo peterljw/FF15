@@ -10,9 +10,9 @@ library(highcharter)
 library(tidyverse)
 
 # load champions
-s3BucketName <- "peter-covid-dashboard-data"
-Sys.setenv("AWS_ACCESS_KEY_ID" = "AKIAWECDTQ4VU6FGPRHY",
-           "AWS_SECRET_ACCESS_KEY" = "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",
+s3BucketName <- "peter-ff15-data"
+Sys.setenv("AWS_ACCESS_KEY_ID" = "",
+           "AWS_SECRET_ACCESS_KEY" = "",
            "AWS_DEFAULT_REGION" = "us-east-2")
 
 df_champion_properties = aws.s3::s3read_using(read.csv, object = "s3://peter-ff15-data/champion_properties.csv")
@@ -28,21 +28,20 @@ ui <- dashboardPage(
   
   ####### Dashboard Title #######
   # dashboardHeader(title = "FF15"),
-  dashboardHeader(title = span(img(src="FF15_Logo.jpg",height = "45px"))),
+  dashboardHeader(title = span(img(src="FF15_Logo.png",height = "48px"))),
   
   ####### Dashboard Sidebar #######
   dashboardSidebar(    
     sidebarMenu(
-      # champion statistics
-      menuItem("Champion Statistics", tabName = "champion_statistics", icon = icon("chart-bar")),
-      # # game strategy
-      # menuItem("Game Strategy", tabName = "game_strategy", icon = icon("trophy"),
-      #          menuSubItem("Champion Guide", tabName = "champion_guide"),
-      #          menuSubItem("Win Conditions", tabName = "win_conditions"),
-      #          menuSubItem("Duo Synergy", tabName = "duo_synergy")
-      # ),
       # pick & ban
-      menuItem("Pick & Ban", tabName = "pick_ban", icon = icon("chess"))
+      menuItem("Pick & Ban Analyser", tabName = "pick_ban", icon = icon("chess")),
+      # game strategy
+      menuItem("Game Data Insights", tabName = "game_statistics", icon = icon("chart-bar"),
+               menuSubItem("Champion Statistics", tabName = "champion_statistics"),
+               menuSubItem("Duo Synergy", tabName = "duo_synergy"),
+               menuSubItem("Win Conditions", tabName = "win_conditions"),
+               menuSubItem("Champion Tips", tabName = "champion_tips")
+      )
     )
   ),
   ####### Dashboard Body #######

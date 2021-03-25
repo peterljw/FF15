@@ -20,7 +20,7 @@ def get_user_agent():
 
 def request_session(url):
     s = r.Session()
-    for i in range(3):
+    for _ in range(3):
         ua = get_user_agent()
         s.headers.update({'user-agent': ua})
         response = s.get(url)
@@ -60,7 +60,7 @@ def change_ua_selenium_options(user_agent, options):
 
 def get_page_selenium(url):
     # get the company profile url based on the company name
-    for i in range(3):
+    for _ in range(3):
         try:
             # initialize chrome options
             options = webdriver.ChromeOptions()
@@ -74,7 +74,7 @@ def get_page_selenium(url):
             driver.get(url)
             driver.set_window_size(1920, 1080)
             # close possibe pop ups
-            for i in range(2):
+            for _ in range(2):
                 time.sleep(randint(1,2))
                 webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
             # get scroll height

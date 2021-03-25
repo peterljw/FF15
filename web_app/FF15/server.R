@@ -7,9 +7,9 @@ library(tidyverse)
 
 ######## Data Preprocessing ########
 
-s3BucketName <- "peter-covid-dashboard-data"
-Sys.setenv("AWS_ACCESS_KEY_ID" = "AKIAWECDTQ4VU6FGPRHY",
-           "AWS_SECRET_ACCESS_KEY" = "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",
+s3BucketName <- "peter-ff15-data"
+Sys.setenv("AWS_ACCESS_KEY_ID" = "",
+           "AWS_SECRET_ACCESS_KEY" = "",
            "AWS_DEFAULT_REGION" = "us-east-2")
 
 # load champion statistics
@@ -100,7 +100,6 @@ generate_rating_table <- function(df_champion_properties,
   return(df_ratings)
 }
 
-
 plot_combat_radar <- function(df){
   highchart() %>%
     hc_title(text = "Combat Radar") %>%
@@ -117,8 +116,8 @@ generate_champion_recommendation_table <- function(df_champion_stats,df_champion
   if(favorite_champions == '' | grepl('Enter', favorite_champions, fixed = TRUE)){
     df_champ_stats = transform_champion_stats_table(df_champion_stats,ranks) %>%
       left_join(df_champion_properties[c('champion','primary_class','secondary_class','role')], by='champion') %>%
-      select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate'=win_rate,
-             'Pick Rate'=pick_rate,'Ban Rate'=ban_rate,'Primary Class'=primary_class,
+      select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate %'=win_rate,
+             'Pick Rate %'=pick_rate,'Ban Rate %'=ban_rate,'Primary Class'=primary_class,
              'Secondary Class'=secondary_class,'Role'=role,
              'Counters'=counters,'Matches'=matches)
     return(df_champ_stats)
@@ -127,8 +126,8 @@ generate_champion_recommendation_table <- function(df_champion_stats,df_champion
     df_champ_stats = transform_champion_stats_table(df_champion_stats,ranks) %>%
       left_join(df_champion_properties[c('champion','primary_class','secondary_class','role')], by='champion') %>%
       filter(champion %in% favorite_champions) %>%
-      select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate'=win_rate,
-             'Pick Rate'=pick_rate,'Ban Rate'=ban_rate,'Primary Class'=primary_class,
+      select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate %'=win_rate,
+             'Pick Rate %'=pick_rate,'Ban Rate %'=ban_rate,'Primary Class'=primary_class,
              'Secondary Class'=secondary_class,'Role'=role,
              'Counters'=counters,'Matches'=matches)
     return(df_champ_stats)
