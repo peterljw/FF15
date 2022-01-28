@@ -167,9 +167,6 @@ ui <- dashboardPage(
                                                           'Challenger'),
                                               selected = c('Silver','Gold'),
                                               inline = TRUE),
-                           sliderInput("champion_recommendation_slider", 
-                                       label = h5("Aggression Meter (Right/High: Prioritize champions that best counter enemies; Left/Low: Prioritize champions that best synergize with allies)"),
-                                       min = 0, max = 10, value = 5),
                            textInput("favorite_champions", label = "", value = "Enter favorite champions separated by comma to limit the recommendations below. (For example: 'Teemo,Garen,Darius')")
                        )
                 )

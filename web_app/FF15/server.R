@@ -29,7 +29,7 @@ df_champion_properties[factor_cols] <- lapply(df_champion_properties[factor_cols
 choose_top_n_counters <- function(counters,n){
   counters_vector = unlist(strsplit(counters, ","))
   n = max(c(n,length(counters_vector)))
-  top_n_counters = paste(counters_vector[1:3],collapse = ',')
+  top_n_counters = paste(counters_vector[1:n],collapse = ', ')
   return =(top_n_counters)
 }
 
@@ -46,12 +46,13 @@ transform_champion_stats_table <- function(df,ranks){
     win_rate = round(sum(win_rate*matches)/sum(matches),digits = 4)*100,
     pick_rate = round(sum(pick_rate*matches)/sum(matches),digits = 4)*100,
     ban_rate = round(sum(ban_rate*matches)/sum(matches),digits = 4)*100,
-    counters = paste(counters,collapse=','),
+    counters = paste(counters,collapse=', '),
     matches = sum(matches), .groups="keep"
   )%>%
     arrange(tier,desc(win_rate))
   
   df_champ_stats$counters = sapply(df_champ_stats$counters, function(x) paste(unique(unlist(strsplit(x, ","))),collapse = ','))
+
   return(df_champ_stats)
 }
 
@@ -61,7 +62,7 @@ generate_champion_stats_table <- function(df_champion_stats,df_champion_properti
     select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate %'=win_rate,
            'Pick Rate %'=pick_rate,'Ban Rate %'=ban_rate,'Primary Class'=primary_class,
            'Secondary Class'=secondary_class,'Role'=role,
-           'Counters'=counters,'Matches'=matches)
+           'Counters'=counters)
   return(df_champ_stats)
 }
 
@@ -119,17 +120,18 @@ generate_champion_recommendation_table <- function(df_champion_stats,df_champion
       select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate %'=win_rate,
              'Pick Rate %'=pick_rate,'Ban Rate %'=ban_rate,'Primary Class'=primary_class,
              'Secondary Class'=secondary_class,'Role'=role,
-             'Counters'=counters,'Matches'=matches)
+             'Counters'=counters)
     return(df_champ_stats)
   } else{
     favorite_champions = unlist(strsplit(favorite_champions, ","))
+    favorite_champions = sapply(favorite_champions, trimws)
     df_champ_stats = transform_champion_stats_table(df_champion_stats,ranks) %>%
       left_join(df_champion_properties[c('champion','primary_class','secondary_class','role')], by='champion') %>%
       filter(champion %in% favorite_champions) %>%
       select('Champion'=champion,'Lane'=lane,'Tier'=tier,'Win Rate %'=win_rate,
              'Pick Rate %'=pick_rate,'Ban Rate %'=ban_rate,'Primary Class'=primary_class,
              'Secondary Class'=secondary_class,'Role'=role,
-             'Counters'=counters,'Matches'=matches)
+             'Counters'=counters)
     return(df_champ_stats)
   }
 }

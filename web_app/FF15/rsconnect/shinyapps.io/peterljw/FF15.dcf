@@ -5,9 +5,9 @@ account: peterljw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3586010
-bundleId: 4392185
+bundleId: 5517176
 url: https://peterljw.shinyapps.io/FF15/
-when: 1616646267.07542
+when: 1643348935.43485
+lastSyncTime: 1643348935.43485
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: www/.DS_Store
