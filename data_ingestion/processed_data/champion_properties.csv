@@ -2,6 +2,7 @@ champion,class,primary_class,secondary_class,role,physical_damage,tankiness,cont
 Aatrox,Fighter/Tank,Fighter,Tank,Juggernaut,3.0,3.0,2.0,2.0,2.0,0.0
 Ahri,Mage/Assassin,Mage,Assassin,Burst,0.0,1.0,2.0,3.0,1.0,3.0
 Akali,Assassin,Assassin,,Assassin,3.0,1.0,1.0,3.0,1.0,0.0
+Akshan,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,1.0,3.0,2.0,0.0
 Alistar,Tank/Support,Tank,Support,Vanguard,0.0,3.0,3.0,1.0,2.0,1.0
 Amumu,Tank/Mage,Tank,Mage,Vanguard,0.0,3.0,3.0,1.0,1.0,2.0
 Anivia,Mage/Support,Mage,Support,Battlemage,0.0,1.0,3.0,1.0,2.0,3.0
@@ -36,6 +37,7 @@ Garen,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,1.0,1.0,1.0,0.0
 Gnar,Fighter/Tank,Fighter,Tank,Specialist,2.0,1.0,1.0,2.0,1.0,0.0
 Gragas,Fighter/Mage,Fighter,Mage,Vanguard,0.0,3.0,3.0,2.0,1.0,2.0
 Graves,Marksman,Marksman,,Specialist,3.0,2.0,1.0,2.0,2.0,0.0
+Gwen,Fighter/Assassin,Fighter,Assassin,Skirmisher,0.0,2.0,1.0,3.0,1.0,3.0
 Hecarim,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,2.0,1.0,0.0
 Heimerdinger,Mage/Support,Mage,Support,Specialist,0.0,1.0,2.0,1.0,2.0,3.0
 Illaoi,Fighter/Tank,Fighter,Tank,Juggernaut,3.0,2.0,1.0,1.0,1.0,0.0
@@ -63,7 +65,7 @@ Kog'Maw,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,1.0,1.0,1.0,0.0
 LeBlanc,Assassin/Mage,Assassin,Mage,Burst,0.0,1.0,2.0,3.0,1.0,3.0
 Lee Sin,Fighter/Assassin,Fighter,Assassin,Diver,3.0,2.0,2.0,3.0,1.0,0.0
 Leona,Tank/Support,Tank,Support,Vanguard,1.0,3.0,3.0,1.0,1.0,0.0
-Lillia,Mage,Mage,,Skirmisher,0.0,1.0,2.0,2.0,2.0,3.0
+Lillia,Fighter/Mage,Fighter,Mage,Skirmisher,0.0,1.0,2.0,2.0,2.0,3.0
 Lissandra,Mage,Mage,,Burst,0.0,1.0,3.0,2.0,1.0,3.0
 Lucian,Marksman,Marksman,,Marksman,3.0,1.0,1.0,3.0,1.0,0.0
 Lulu,Support/Mage,Support,Mage,Enchanter,0.0,1.0,2.0,1.0,3.0,2.0
@@ -93,7 +95,8 @@ Quinn,Marksman/Assassin,Marksman,Assassin,Specialist,3.0,1.0,2.0,3.0,1.0,0.0
 Rakan,Support,Support,,Catcher,0.0,2.0,3.0,3.0,3.0,1.0
 Rammus,Tank/Fighter,Tank,Fighter,Vanguard,2.0,3.0,3.0,2.0,1.0,0.0
 Rek'Sai,Fighter,Fighter,,Diver,2.0,2.0,2.0,2.0,2.0,0.0
-Rell,Support/Tank,Support,Tank,Vanguard,0.0,3.0,3.0,2.0,2.0,1.0
+Rell,Tank,Tank,,Vanguard,0.0,3.0,3.0,2.0,2.0,1.0
+Renata Glasc,Support/Mage,Support,Mage,Enchanter,0.0,1.0,3.0,1.0,2.0,2.0
 Renekton,Fighter/Tank,Fighter,Tank,Diver,2.0,2.0,2.0,2.0,1.0,0.0
 Rengar,Assassin/Fighter,Assassin,Fighter,Assassin,3.0,1.0,2.0,2.0,1.0,0.0
 Riven,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,2.0,3.0,1.0,0.0
@@ -120,8 +123,8 @@ Tahm Kench,Support/Tank,Support,Tank,Warden,0.0,3.0,2.0,1.0,3.0,2.0
 Taliyah,Mage/Support,Mage,Support,Battlemage,0.0,1.0,2.0,1.0,3.0,3.0
 Talon,Assassin,Assassin,,Assassin,3.0,1.0,1.0,2.0,1.0,0.0
 Taric,Support/Fighter,Support,Fighter,Enchanter,1.0,2.0,2.0,1.0,3.0,0.0
-Teemo,Marksman/Assassin,Marksman,Assassin,Specialist,0.0,1.0,2.0,1.0,2.0,3.0
-Thresh,Support/Fighter,Support,Fighter,Catcher,0.0,2.0,3.0,1.0,3.0,1.0
+Teemo,Marksman/Assassin,Marksman,Assassin,Specialist,3.0,1.0,2.0,1.0,2.0,0.0
+Thresh,Support/Fighter,Support,Fighter,Catcher,1.0,2.0,3.0,1.0,3.0,0.0
 Tristana,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,2.0,2.0,1.0,0.0
 Trundle,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,1.0,1.0,2.0,0.0
 Tryndamere,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,2.0,1.0,2.0,1.0,0.0
@@ -133,8 +136,9 @@ Varus,Marksman/Mage,Marksman,Mage,Marksman,3.0,1.0,2.0,1.0,1.0,0.0
 Vayne,Marksman/Assassin,Marksman,Assassin,Marksman,3.0,1.0,2.0,2.0,1.0,0.0
 Veigar,Mage,Mage,,Burst,0.0,1.0,3.0,1.0,1.0,3.0
 Vel'Koz,Mage,Mage,,Artillery,0.0,1.0,2.0,1.0,1.0,3.0
+Vex,Mage,Mage,,Burst,0.0,2.0,2.0,2.0,1.0,3.0
 Vi,Fighter/Assassin,Fighter,Assassin,Diver,2.0,2.0,3.0,2.0,1.0,0.0
-Viego,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,1.0,2.0,2.0,1.0,0.0
+Viego,Assassin/Fighter,Assassin,Fighter,Skirmisher,3.0,1.0,2.0,2.0,1.0,0.0
 Viktor,Mage,Mage,,Battlemage,0.0,1.0,2.0,1.0,1.0,3.0
 Vladimir,Mage,Mage,,Battlemage,0.0,2.0,1.0,1.0,1.0,3.0
 Volibear,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,3.0,2.0,2.0,1.0,0.0
@@ -144,11 +148,12 @@ Xayah,Marksman,Marksman,,Marksman,3.0,2.0,3.0,1.0,1.0,0.0
 Xerath,Mage,Mage,,Artillery,0.0,1.0,2.0,1.0,1.0,3.0
 Xin Zhao,Fighter/Assassin,Fighter,Assassin,Diver,2.0,2.0,2.0,2.0,1.0,0.0
 Yasuo,Fighter/Assassin,Fighter,Assassin,Skirmisher,3.0,1.0,2.0,3.0,2.0,0.0
-Yone,Assassin,Assassin,,Assassin,3.0,1.0,2.0,3.0,1.0,0.0
+Yone,Assassin/Fighter,Assassin,Fighter,Assassin,3.0,1.0,2.0,3.0,1.0,0.0
 Yorick,Fighter/Tank,Fighter,Tank,Juggernaut,2.0,2.0,2.0,1.0,2.0,0.0
 Yuumi,Support/Mage,Support,Mage,Enchanter,0.0,1.0,1.0,3.0,3.0,1.0
 Zac,Tank/Fighter,Tank,Fighter,Vanguard,0.0,3.0,3.0,2.0,1.0,2.0
 Zed,Assassin,Assassin,,Assassin,3.0,1.0,1.0,3.0,1.0,0.0
+Zeri,Marksman,Marksman,,Marksman,2.0,1.0,2.0,3.0,0.0,0.0
 Ziggs,Mage,Mage,,Artillery,0.0,1.0,2.0,2.0,1.0,3.0
 Zilean,Support/Mage,Support,Mage,Specialist,0.0,1.0,2.0,2.0,3.0,2.0
 Zoe,Mage/Support,Mage,Support,Burst,0.0,1.0,2.0,2.0,1.0,3.0
